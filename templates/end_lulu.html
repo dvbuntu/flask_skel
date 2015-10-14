@@ -1,0 +1,18 @@
+<!doctype html>
+<title>Just a Quiz!</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+<div class=page>
+    <h1>Just a Quiz!</h1>
+    <div class=metanav>
+        Your answers were:
+        <ul>
+        {% for answer in answers %}
+        <li>{{ answer }}</li>
+        {% endfor %}
+        </ul>
+
+        <h4>
+            Thank you for testing!
+        </h4>
+    </div>
+</div>
